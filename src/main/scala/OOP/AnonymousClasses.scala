@@ -1,7 +1,7 @@
 package OOP
 
 object AnonymousClasses extends App{
-  absract class Animal {
+  abstract class Animal {
     def eat: Unit
 
   }
@@ -18,10 +18,10 @@ object AnonymousClasses extends App{
 
   }
 
-  val jim = Person(name = "Jim") { // pass in required constructor arguments if needed
+  //val jim = Person(name = "Jim") { // pass in required constructor arguments if needed
     // implement all abstract fields/methods
-    override def sayHi: Unit = println("sdfsdf")
+    //override def sayHi: Unit = println("sdfsdf")
 
-  }
+  //}
 
 }

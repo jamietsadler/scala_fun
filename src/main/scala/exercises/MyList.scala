@@ -143,6 +143,16 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
 
 }
 
+trait MyPredicate[-T] {
+  def test (elem: T): Boolean
+
+}
+
+trait MyTransformer[-A, B] {
+  def transform(elem: A): B
+
+}
+
 object ListTest extends App {
   val listOfIntegers: MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
   val cloneListOfIntegers: MyList[Int] = new Cons(1, new Cons(2, new Cons(3, Empty)))
